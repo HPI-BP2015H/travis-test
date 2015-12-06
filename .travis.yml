@@ -6,7 +6,7 @@ addons:
             - libssl1.0.0:i386
 smalltalk:
     - Pharo-5.0
-script:
+after_failure:
     - $PHARO_VM --nodisplay "$SMALLTALK_CI_BUILD/$PHARO_IMAGE" test --junit-xml-output --fail-on-failure "$TESTS" 2>&1
 env:
     global:
