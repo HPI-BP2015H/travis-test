@@ -1,0 +1,14 @@
+{
+	"category" : "Whatever",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SuccessWhatever",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
