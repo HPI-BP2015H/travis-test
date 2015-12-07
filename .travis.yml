@@ -5,9 +5,11 @@ addons:
         packages:
             - libssl1.0.0:i386
 smalltalk:
+    - Pharo-alpha
+    - Pharo-stable
     - Pharo-5.0
-after_failure:
-    - $PHARO_VM --nodisplay "$SMALLTALK_CI_BUILD/$PHARO_IMAGE" test --junit-xml-output --fail-on-failure "$TESTS" 2>&1
+    - Pharo-4.0
+    - Pharo-3.0
 env:
     global:
         - BASELINE="Whatever"
